@@ -3,6 +3,7 @@
 ## Proto Build
     ```bash
     protoc -I api/proto --go-grpc_out=pkg api/proto/adder.proto
+    protoc -I api/proto --go_out=pkg api/proto/adder.proto
     ```
 
 # Server run
