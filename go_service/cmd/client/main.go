@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 	"flag"
-	"grpcadder/pkg/api"
+	"go_service/pkg/api"
 	"log"
 	"strconv"
 

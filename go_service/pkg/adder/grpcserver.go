@@ -2,7 +2,7 @@ package adder
 
 import (
 	"context"
-	"grpcadder/pkg/api"
+	"go_service/pkg/api"
 )
 
 // GRPCServer ...
