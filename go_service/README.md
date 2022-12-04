@@ -8,9 +8,13 @@
 
 ### Client run
 - Go-server connection
-    go run ./cmd/client/main.go localhost:8080
+```bash
+go run ./cmd/client/main.go localhost:8080
+```
 - Py-server connection
-    go run ./cmd/client/main.go localhost:8081
+```bash
+go run ./cmd/client/main.go localhost:8081
+```
 
 ### Repo init
     go mod init <repo>
@@ -18,7 +22,9 @@
 
 ### Issues
 - proto build with error PATH:
-    nano ~/.bash_profile 
-    export GO_PATH=~/go
-    export PATH=$PATH:/$GO_PATH/bin
-    source ~/.bash_profile
+```bash
+nano ~/.bash_profile 
+export GO_PATH=~/go
+export PATH=$PATH:/$GO_PATH/bin
+source ~/.bash_profile
+```
