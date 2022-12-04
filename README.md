@@ -5,8 +5,8 @@
     protoc -I api/proto --go-grpc_out=pkg api/proto/adder.proto
     protoc -I api/proto --go_out=pkg api/proto/adder.proto
 
-    python3 -m grpc_tools.protoc -I api/proto/ --python_out=pkg api/proto/adder.proto
-    python3 -m grpc_tools.protoc -I api/proto/ --grpc_python_out=pkg api/proto/adder.proto
+    python3 -m grpc_tools.protoc -I api/proto/ --python_out=pkg/api api/proto/adder.proto
+    python3 -m grpc_tools.protoc -I api/proto/ --grpc_python_out=pkg/api api/proto/adder.proto
     ```
 
 # Server run
