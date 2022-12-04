@@ -12,9 +12,9 @@
     python3 client.py --host=localhost:8080
     ```
 - Py-server connection
-```bash
-python3 client.py --host=localhost:8081
-```
+    ```bash
+    python3 client.py --host=localhost:8081
+    ```
 
 ### Repo init
     pip install grpcio-tools
