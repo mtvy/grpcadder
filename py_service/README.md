@@ -7,7 +7,10 @@
     python3 server.py
 
 ### Client run
-    python3 client.py
+- Go-server connection
+    python3 client.py --host=localhost:8080
+- Py-server connection
+    python3 client.py --host=localhost:8081
 
 ### Repo init
     pip install grpcio-tools

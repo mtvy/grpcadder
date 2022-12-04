@@ -7,7 +7,10 @@
     go build -v ./cmd/server/main.go
 
 ### Client run
-    go run ./cmd/client/main.go
+- Go-server connection
+    go run ./cmd/client/main.go localhost:8080
+- Py-server connection
+    go run ./cmd/client/main.go localhost:8081
 
 ### Repo init
     go mod init <repo>
@@ -19,4 +22,3 @@
     export GO_PATH=~/go
     export PATH=$PATH:/$GO_PATH/bin
     source ~/.bash_profile
-    

@@ -1,32 +1,43 @@
 package main
 
 import (
+	"bufio"
 	"context"
 	"flag"
+	"fmt"
 	"go_service/pkg/api"
 	"log"
+	"os"
 	"strconv"
 
 	"google.golang.org/grpc"
 )
 
 func main() {
+	reader := bufio.NewReader(os.Stdin)
+
 	flag.Parse()
-	if flag.NArg() < 2 {
+	if flag.NArg() < 1 {
 		log.Fatal("Not enough args!")
 	}
 
-	x, err := strconv.Atoi(flag.Arg(0))
+	host := flag.Arg(0)
+
+	conn, err := grpc.Dial(host, grpc.WithInsecure())
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	y, err := strconv.Atoi(flag.Arg(1))
+	fmt.Print("x = ")
+	sx, _ := reader.ReadString('\n')
+	x, err := strconv.Atoi(sx[:len(sx)-1])
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	conn, err := grpc.Dial(":8080", grpc.WithInsecure())
+	fmt.Print("y = ")
+	sy, _ := reader.ReadString('\n')
+	y, err := strconv.Atoi(sy[:len(sx)-1])
 	if err != nil {
 		log.Fatal(err)
 	}
