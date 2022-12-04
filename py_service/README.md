@@ -8,9 +8,9 @@
 
 ### Client run
 - Go-server connection
-```bash
-python3 client.py --host=localhost:8080
-```
+    ```bash
+    python3 client.py --host=localhost:8080
+    ```
 - Py-server connection
 ```bash
 python3 client.py --host=localhost:8081
